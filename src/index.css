@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Healthcare color palette - Teal, Mint, Coral, Grey */
+    --background: 210 40% 98%;
+    --foreground: 210 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+
+    /* Primary: Medical Teal - trust and professionalism */
+    --primary: 180 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 180 55% 65%;
+    --primary-dark: 180 70% 35%;
+
+    /* Secondary: Soft Mint - healing and freshness */
+    --secondary: 165 50% 85%;
+    --secondary-foreground: 165 60% 25%;
+    --secondary-accent: 165 60% 60%;
+
+    /* Accent: Warm Coral - care and warmth */
+    --accent: 10 75% 65%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 10 70% 75%;
+
+    /* Muted: Sophisticated Grey */
+    --muted: 210 20% 92%;
+    --muted-foreground: 210 10% 45%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 180 65% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for modern healthcare feel */
+    --gradient-primary: linear-gradient(135deg, hsl(180 65% 45%) 0%, hsl(165 60% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(180 65% 45%) 0%, hsl(165 60% 60%) 50%, hsl(10 75% 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(165 50% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(10 75% 65%) 0%, hsl(10 80% 75%) 100%);
+    
+    /* Shadows for depth */
+    --shadow-sm: 0 2px 8px hsl(180 65% 45% / 0.08);
+    --shadow-md: 0 4px 16px hsl(180 65% 45% / 0.12);
+    --shadow-lg: 0 8px 32px hsl(180 65% 45% / 0.16);
+    --shadow-glow: 0 0 40px hsl(180 65% 55% / 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 210 25% 10%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 20% 14%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 20% 14%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 180 60% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 180 55% 65%;
+    --primary-dark: 180 65% 45%;
+
+    --secondary: 165 40% 25%;
+    --secondary-foreground: 165 50% 85%;
+    --secondary-accent: 165 50% 50%;
+
+    --accent: 10 75% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 10 70% 70%;
+
+    --muted: 210 20% 20%;
+    --muted-foreground: 210 15% 65%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 25%;
+    --input: 210 20% 25%;
+    --ring: 180 60% 55%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(180 60% 55%) 0%, hsl(165 50% 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(180 60% 55%) 0%, hsl(165 50% 50%) 50%, hsl(10 75% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(210 20% 14%) 0%, hsl(165 30% 16%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(10 75% 60%) 0%, hsl(10 80% 70%) 100%);
+    
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 16px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(180 60% 55% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    @apply rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply opacity-80;
+  }
+}
+
+@layer components {
+  /* Gradient text utilities */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-hero {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .dark .glass {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Animated gradient background */
+  .animated-gradient {
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Hover lift effect */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Pulse animation for important elements */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(180 65% 45% / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(180 65% 45% / 0.6);
+    }
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Slide in from right */
+  .slide-in-right {
+    animation: slide-in-right 0.5s ease-out;
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
