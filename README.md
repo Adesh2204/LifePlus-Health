@@ -100,18 +100,6 @@ Before you begin, ensure you have the following installed:
 
 *Comprehensive medical records management with easy search and filtering*
 
-### Appointment Scheduling
-![Appointments](https://via.placeholder.com/800x400/F59E0B/FFFFFF?text=Appointment+Scheduling)
-
-*Easy appointment booking and management interface*
-
-### Mobile Responsive View
-![Mobile View](https://via.placeholder.com/400x800/EF4444/FFFFFF?text=Mobile+Responsive+Design)
-
-*Fully responsive design optimized for mobile devices*
-
-> **Note:** Replace these placeholder images with actual screenshots of your application
-
 ## 🏗️ Project Structure
 
 ```text
