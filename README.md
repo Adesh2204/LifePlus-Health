@@ -1,6 +1,6 @@
 # LifePlus Health 🏥
 
-A comprehensive health and wellness application designed to help users track their medical records, appointments, and health metrics in one centralized platform.
+A comprehensive health and wellness application designed to help users track their medical records, appointments, and health metrics in one centralised platform.
 
 ![LifePlus Health](https://img.shields.io/badge/Version-1.0.0-blue.svg)
 ![React](https://img.shields.io/badge/React-18.2.0-61dafb.svg)
@@ -90,13 +90,13 @@ Before you begin, ensure you have the following installed:
 
 ## 📸 Screenshots
 
-### Dashboard Overview
-![Dashboard](https://github.com/Adesh2204/LifePlus-Health/blob/f44d8731da383f646ed78186d71c0f40fb681169/Screenshot%202025-10-16%20at%2010.01.03%E2%80%AFAM.png)
+### Front Overview
+![Front Overview](https://github.com/Adesh2204/LifePlus-Health/blob/f44d8731da383f646ed78186d71c0f40fb681169/Screenshot%202025-10-16%20at%2010.01.03%E2%80%AFAM.png)
 
 *Modern and intuitive dashboard showing health overview and quick actions*
 
-### Medical Records
-![Medical Records](https://github.com/Adesh2204/LifePlus-Health/blob/f44d8731da383f646ed78186d71c0f40fb681169/Screenshot%202025-10-16%20at%2010.03.05%E2%80%AFAM.png)
+### Dashboard
+![Dashboard](https://github.com/Adesh2204/LifePlus-Health/blob/f44d8731da383f646ed78186d71c0f40fb681169/Screenshot%202025-10-16%20at%2010.03.05%E2%80%AFAM.png)
 
 *Comprehensive medical records management with easy search and filtering*
 
