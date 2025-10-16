@@ -91,12 +91,12 @@ Before you begin, ensure you have the following installed:
 ## 📸 Screenshots
 
 ### Dashboard Overview
-![Dashboard](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=LifePlus+Dashboard+Preview)
+![Dashboard](https://github.com/Adesh2204/LifePlus-Health/blob/f44d8731da383f646ed78186d71c0f40fb681169/Screenshot%202025-10-16%20at%2010.01.03%E2%80%AFAM.png)
 
 *Modern and intuitive dashboard showing health overview and quick actions*
 
 ### Medical Records
-![Medical Records](https://via.placeholder.com/800x400/10B981/FFFFFF?text=Medical+Records+Management)
+![Medical Records](https://github.com/Adesh2204/LifePlus-Health/blob/f44d8731da383f646ed78186d71c0f40fb681169/Screenshot%202025-10-16%20at%2010.03.05%E2%80%AFAM.png)
 
 *Comprehensive medical records management with easy search and filtering*
 
